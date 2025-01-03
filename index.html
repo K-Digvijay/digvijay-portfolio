@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id='desktop-nav'>
+    <nav id="desktop-nav">
         <div class="logo">Digvijay Kewale</div>
         <div>
             <ul class="nav-links">
@@ -21,7 +21,7 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">`
+    <nav id="hamburger-nav">
         <div class="logo">Digvijay Kewale</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="togglemenu()">
@@ -36,27 +36,77 @@
                 <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
             </ul>
         </div>
-        </div>
     </nav>
+    <!-- section -->
     <section id="profile">
         <div class="section__pic-cointainer">
-            <img src="./static/profilepic_.jpeg" alt="Digvijay Kewale Profile picture">
+            <img src="./static/profilepic.png" alt="Digvijay Kewale Profile picture" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Digvijay Kewale</h1>
-            <p class="section__text__p2">Aspiring Data scientist, machine Learning Engineer, AI Engineer</p>
+            <p class="section__text__p2">Aspiring AI Engineer, Data Scientist, ML Engineer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./static/Resume_Data_Digvijay.pdf')">Download
                     CV</button>
             </div>
             <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+
+            <div id="social-container">
+                <img src="/static/linkedin.png" alt="My linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/digvijaykewale/'" />
+                <img src="/static/github.png" alt="My github profile" class="icon"
+                    onclick="location.href='https://github.com/K-Digvijay/'" />
+            </div>
         </div>
-        <div id="social-container">
-            <img src="/static/linkedin.png" alt="My linkedin profile" class="icon"
-                onclick="location.href='https://www.linkedin.com/in/digvijaykewale/'" />
-            <img src="/static/github.png" alt="My github profile" class="icon"
-                onclick="location.href='https://github.com/K-Digvijay'" />
+    </section>
+    <section id="about">
+        <p class="section__text_p1"> <b><i>Get to know more</i></b>
+            <hr>
+        </p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./static/profilepic-2.png" alt="profile-picture" class="about-pic" />
+            </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./static/experience.png" alt="experience-icon" class="experience-icon" />
+                        <h3>Experience - 3+ years</h3>
+                        <hr />
+                        <p>Associate Engineer - II</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./static/education.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <hr/>
+                        <p>Masters in Data Science and Machine Learning</p>
+                        <p>Bachelors in Mechanical Engineering</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        <i> 
+                            I am a data-driven professional with a strong foundation in engineering and a passion for
+                        leveraging data science and machine learning to solve real-world problems. With experience in
+                        data analysis, predictive modeling, and machine learning, I have developed good skills in
+                        Python, Power BI, and cloud platforms like AWS SageMaker.
+                        Currently, as a Design Engineer at Capgemini Engineering, I have honed my technical and
+                        analytical abilities by working on complex CAD models for high-profile projects like ITER,
+                        Airbus, and Boeing. I have successfully managed data-centric tasks and enhanced the quality and
+                        accuracy of engineering designs.
+                        am eager to transition into roles like Data Scientist, Machine Learning Engineer or AI Engineer,
+                        where I can apply my skills in Python, machine learning algorithms, and data visualization tools
+                        such as Tableau and Matplotlib to drive innovation and optimize business solutions. I am
+                        committed to continuous learning and am currently advancing my knowledge in cloud-based AI
+                        deployment and machine learning model development.
+                        </i>
+
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <script src='script.js'></script>
