@@ -45,9 +45,12 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Digvijay Kewale</h1>
-            <div class="section__text__p2">Aspiring</div>
-            <div id="element" class="section__text__p2">Aspiring</div>
-            <span class="element"></span>
+            <div class="section__text__p2">Aspiring
+                <span id="element" class="section__text__p2"></span>
+                <span class="element"></span>
+            </div>
+            <!-- <div id="element" class="section__text__p2">Aspiring</div>
+            <span class="element"></span> -->
 
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./static/Resume_Data_Digvijay.pdf')">Download
@@ -277,19 +280,24 @@
                 <img src="./static/linkedin-1.png" alt="linkedin icon" />
                 <p><a href="https://www.linkedin.com/in/digvijaykewale/">Linkedin Profile</a></p>
             </div>
+            <div class="contact-info-container">
+                <img src="./static/github-1.png" alt="linkedin icon" />
+                <p><a href="https://www.linkedin.com/in/digvijaykewale/">Github Profile</a></p>
+            </div>
         </div>
+        
     </section>
     <script src='script.js'></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['<i>Data Scientist</i>.', '<i>Machine Learning Engineer</i>.', '<i>AI Engineer</i>.'],
+            strings: ['<i>Data Scientist</i>.', '<i>ML Engineer</i>.', '<i>AI Engineer</i>.'],
             typeSpeed: 50,
-            // backSpeed: 50,
+            backSpeed: 50,
             showCursor: false,
-            loop: true
-            // smartBackspace:true,
+            loop: true,
+            smartBackspace:true,
         });
     </script>
 
